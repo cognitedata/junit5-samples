@@ -121,6 +121,7 @@ public class BazelJUnit5ConsoleLauncher {
 
     addEmptyMessageAttributeToNodes(mergedXmlOutput.getElementsByTagName("failure"));
     addEmptyMessageAttributeToNodes(mergedXmlOutput.getElementsByTagName("skipped"));
+    addEmptyMessageAttributeToNodes(mergedXmlOutput.getElementsByTagName("error"));
     return mergedXmlOutput;
   }
 
